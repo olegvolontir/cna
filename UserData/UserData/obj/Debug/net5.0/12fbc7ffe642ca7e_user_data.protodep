@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos/UserData.cs \
+obj\Debug\net5.0\Protos/UserDataGrpc.cs: Protos/user_data.proto
