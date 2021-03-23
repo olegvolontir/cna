@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "CNA_Tema1";
+option csharp_namespace = "GrpcService1";
 
 service UserData{
 	rpc GetUserData(SendUserData) returns (Reply); 

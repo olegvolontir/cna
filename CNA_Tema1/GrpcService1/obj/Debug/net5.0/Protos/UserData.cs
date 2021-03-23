@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace CNA_Tema1 {
+namespace GrpcService1 {
 
   /// <summary>Holder for reflection information generated from Protos/user_data.proto</summary>
   public static partial class UserDataReflection {
@@ -27,12 +27,12 @@ namespace CNA_Tema1 {
             "ChZQcm90b3MvdXNlcl9kYXRhLnByb3RvIikKDFNlbmRVc2VyRGF0YRIMCgRu",
             "YW1lGAEgASgJEgsKA2NucBgCIAEoCSIYCgVSZXBseRIPCgdtZXNzYWdlGAEg",
             "ASgJMjAKCFVzZXJEYXRhEiQKC0dldFVzZXJEYXRhEg0uU2VuZFVzZXJEYXRh",
-            "GgYuUmVwbHlCDKoCCUNOQV9UZW1hMWIGcHJvdG8z"));
+            "GgYuUmVwbHlCD6oCDEdycGNTZXJ2aWNlMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::CNA_Tema1.SendUserData), global::CNA_Tema1.SendUserData.Parser, new[]{ "Name", "Cnp" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::CNA_Tema1.Reply), global::CNA_Tema1.Reply.Parser, new[]{ "Message" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService1.SendUserData), global::GrpcService1.SendUserData.Parser, new[]{ "Name", "Cnp" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService1.Reply), global::GrpcService1.Reply.Parser, new[]{ "Message" }, null, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace CNA_Tema1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::CNA_Tema1.UserDataReflection.Descriptor.MessageTypes[0]; }
+      get { return global::GrpcService1.UserDataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -259,7 +259,7 @@ namespace CNA_Tema1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::CNA_Tema1.UserDataReflection.Descriptor.MessageTypes[1]; }
+      get { return global::GrpcService1.UserDataReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

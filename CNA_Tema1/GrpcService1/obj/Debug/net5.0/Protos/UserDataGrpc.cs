@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace CNA_Tema1 {
+namespace GrpcService1 {
   public static partial class UserData
   {
     static readonly string __ServiceName = "UserData";
@@ -42,10 +42,10 @@ namespace CNA_Tema1 {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
-    static readonly grpc::Marshaller<global::CNA_Tema1.SendUserData> __Marshaller_SendUserData = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::CNA_Tema1.SendUserData.Parser));
-    static readonly grpc::Marshaller<global::CNA_Tema1.Reply> __Marshaller_Reply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::CNA_Tema1.Reply.Parser));
+    static readonly grpc::Marshaller<global::GrpcService1.SendUserData> __Marshaller_SendUserData = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GrpcService1.SendUserData.Parser));
+    static readonly grpc::Marshaller<global::GrpcService1.Reply> __Marshaller_Reply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GrpcService1.Reply.Parser));
 
-    static readonly grpc::Method<global::CNA_Tema1.SendUserData, global::CNA_Tema1.Reply> __Method_GetUserData = new grpc::Method<global::CNA_Tema1.SendUserData, global::CNA_Tema1.Reply>(
+    static readonly grpc::Method<global::GrpcService1.SendUserData, global::GrpcService1.Reply> __Method_GetUserData = new grpc::Method<global::GrpcService1.SendUserData, global::GrpcService1.Reply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetUserData",
@@ -55,14 +55,14 @@ namespace CNA_Tema1 {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::CNA_Tema1.UserDataReflection.Descriptor.Services[0]; }
+      get { return global::GrpcService1.UserDataReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of UserData</summary>
     [grpc::BindServiceMethod(typeof(UserData), "BindService")]
     public abstract partial class UserDataBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::CNA_Tema1.Reply> GetUserData(global::CNA_Tema1.SendUserData request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::GrpcService1.Reply> GetUserData(global::GrpcService1.SendUserData request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -83,7 +83,7 @@ namespace CNA_Tema1 {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, UserDataBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetUserData, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::CNA_Tema1.SendUserData, global::CNA_Tema1.Reply>(serviceImpl.GetUserData));
+      serviceBinder.AddMethod(__Method_GetUserData, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService1.SendUserData, global::GrpcService1.Reply>(serviceImpl.GetUserData));
     }
 
   }

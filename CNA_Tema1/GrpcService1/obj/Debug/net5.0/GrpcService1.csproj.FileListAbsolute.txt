@@ -14,7 +14,6 @@ C:\Users\oovolontir\source\repos\cna\CNA_Tema1\GrpcService1\bin\Debug\net5.0\Grp
 C:\Users\oovolontir\source\repos\cna\CNA_Tema1\GrpcService1\bin\Debug\net5.0\Grpc.Net.Client.dll
 C:\Users\oovolontir\source\repos\cna\CNA_Tema1\GrpcService1\bin\Debug\net5.0\Grpc.Net.ClientFactory.dll
 C:\Users\oovolontir\source\repos\cna\CNA_Tema1\GrpcService1\bin\Debug\net5.0\Grpc.Net.Common.dll
-C:\Users\oovolontir\source\repos\cna\CNA_Tema1\GrpcService1\obj\Debug\net5.0\GrpcService1.csprojAssemblyReference.cache
 C:\Users\oovolontir\source\repos\cna\CNA_Tema1\GrpcService1\obj\Debug\net5.0\GrpcService1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\oovolontir\source\repos\cna\CNA_Tema1\GrpcService1\obj\Debug\net5.0\GrpcService1.AssemblyInfoInputs.cache
 C:\Users\oovolontir\source\repos\cna\CNA_Tema1\GrpcService1\obj\Debug\net5.0\GrpcService1.AssemblyInfo.cs
