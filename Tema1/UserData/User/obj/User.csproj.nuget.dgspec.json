@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oovolontir\\source\\repos\\cna\\UserData\\User\\User.csproj": {}
+    "C:\\Users\\oovolontir\\source\\repos\\cna\\Tema1\\UserData\\User\\User.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oovolontir\\source\\repos\\cna\\UserData\\User\\User.csproj": {
+    "C:\\Users\\oovolontir\\source\\repos\\cna\\Tema1\\UserData\\User\\User.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oovolontir\\source\\repos\\cna\\UserData\\User\\User.csproj",
+        "projectUniqueName": "C:\\Users\\oovolontir\\source\\repos\\cna\\Tema1\\UserData\\User\\User.csproj",
         "projectName": "User",
-        "projectPath": "C:\\Users\\oovolontir\\source\\repos\\cna\\UserData\\User\\User.csproj",
+        "projectPath": "C:\\Users\\oovolontir\\source\\repos\\cna\\Tema1\\UserData\\User\\User.csproj",
         "packagesPath": "C:\\Users\\oovolontir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oovolontir\\source\\repos\\cna\\UserData\\User\\obj\\",
+        "outputPath": "C:\\Users\\oovolontir\\source\\repos\\cna\\Tema1\\UserData\\User\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\oovolontir\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

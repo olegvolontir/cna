@@ -5,11 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <None Remove="Protos\autumnZodiacSigns.proto" />
+    <None Remove="Protos\springZodiacSigns.proto" />
+    <None Remove="Protos\summerZodiacSigns.proto" />
+    <None Remove="Protos\winterZodiacSigns.proto" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\autumnZodiacSigns.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\springZodiacSigns.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\summerZodiacSigns.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\winterZodiacSigns.proto" GrpcServices="Server" />
   </ItemGroup>
 
 </Project>
