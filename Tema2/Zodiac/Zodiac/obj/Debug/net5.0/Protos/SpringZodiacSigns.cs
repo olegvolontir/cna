@@ -25,15 +25,15 @@ namespace Zodiac.Protos.SpringZodiacSign {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5Qcm90b3Mvc3ByaW5nWm9kaWFjU2lnbnMucHJvdG8iGQoJSW5wdXREYXRl",
-            "EgwKBGRhdGUYASABKAkiIAoKWm9kaWFjU2lnbhISCgp6b2RpYWNTaWduGAEg",
-            "ASgJMjwKEFNwcmluZ1pvZGlhY1NpZ24SKAoNR2V0Wm9kaWFjU2lnbhIKLklu",
-            "cHV0RGF0ZRoLLlpvZGlhY1NpZ25CIaoCHlpvZGlhYy5Qcm90b3MuU3ByaW5n",
-            "Wm9kaWFjU2lnbmIGcHJvdG8z"));
+            "EgwKBGRhdGUYASABKAkiGgoKWm9kaWFjU2lnbhIMCgRzaWduGAEgASgJMjwK",
+            "EFNwcmluZ1pvZGlhY1NpZ24SKAoNR2V0Wm9kaWFjU2lnbhIKLklucHV0RGF0",
+            "ZRoLLlpvZGlhY1NpZ25CIaoCHlpvZGlhYy5Qcm90b3MuU3ByaW5nWm9kaWFj",
+            "U2lnbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Zodiac.Protos.SpringZodiacSign.InputDate), global::Zodiac.Protos.SpringZodiacSign.InputDate.Parser, new[]{ "Date" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zodiac.Protos.SpringZodiacSign.ZodiacSign), global::Zodiac.Protos.SpringZodiacSign.ZodiacSign.Parser, new[]{ "ZodiacSign_" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zodiac.Protos.SpringZodiacSign.ZodiacSign), global::Zodiac.Protos.SpringZodiacSign.ZodiacSign.Parser, new[]{ "Sign" }, null, null, null, null)
           }));
     }
     #endregion
@@ -241,7 +241,7 @@ namespace Zodiac.Protos.SpringZodiacSign {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ZodiacSign(ZodiacSign other) : this() {
-      zodiacSign_ = other.zodiacSign_;
+      sign_ = other.sign_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -250,14 +250,14 @@ namespace Zodiac.Protos.SpringZodiacSign {
       return new ZodiacSign(this);
     }
 
-    /// <summary>Field number for the "zodiacSign" field.</summary>
-    public const int ZodiacSign_FieldNumber = 1;
-    private string zodiacSign_ = "";
+    /// <summary>Field number for the "sign" field.</summary>
+    public const int SignFieldNumber = 1;
+    private string sign_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ZodiacSign_ {
-      get { return zodiacSign_; }
+    public string Sign {
+      get { return sign_; }
       set {
-        zodiacSign_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        sign_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -274,14 +274,14 @@ namespace Zodiac.Protos.SpringZodiacSign {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ZodiacSign_ != other.ZodiacSign_) return false;
+      if (Sign != other.Sign) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ZodiacSign_.Length != 0) hash ^= ZodiacSign_.GetHashCode();
+      if (Sign.Length != 0) hash ^= Sign.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -298,9 +298,9 @@ namespace Zodiac.Protos.SpringZodiacSign {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ZodiacSign_.Length != 0) {
+      if (Sign.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(ZodiacSign_);
+        output.WriteString(Sign);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -311,9 +311,9 @@ namespace Zodiac.Protos.SpringZodiacSign {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ZodiacSign_.Length != 0) {
+      if (Sign.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(ZodiacSign_);
+        output.WriteString(Sign);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -324,8 +324,8 @@ namespace Zodiac.Protos.SpringZodiacSign {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ZodiacSign_.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ZodiacSign_);
+      if (Sign.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Sign);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -338,8 +338,8 @@ namespace Zodiac.Protos.SpringZodiacSign {
       if (other == null) {
         return;
       }
-      if (other.ZodiacSign_.Length != 0) {
-        ZodiacSign_ = other.ZodiacSign_;
+      if (other.Sign.Length != 0) {
+        Sign = other.Sign;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -356,7 +356,7 @@ namespace Zodiac.Protos.SpringZodiacSign {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            ZodiacSign_ = input.ReadString();
+            Sign = input.ReadString();
             break;
           }
         }
@@ -374,7 +374,7 @@ namespace Zodiac.Protos.SpringZodiacSign {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            ZodiacSign_ = input.ReadString();
+            Sign = input.ReadString();
             break;
           }
         }

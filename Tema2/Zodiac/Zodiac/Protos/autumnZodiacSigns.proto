@@ -14,5 +14,5 @@ message InputDate
 
 message ZodiacSign
 {
-	string zodiacSign = 1;
+	string sign = 1;
 }
