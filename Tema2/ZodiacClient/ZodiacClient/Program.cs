@@ -8,11 +8,18 @@ namespace ZodiacClient
     {
         static async Task Main(string[] args)
         {
+            DateValidation dateValidation = new DateValidation();
+
             var channel = GrpcChannel.ForAddress("https://localhost:5001");
             var client = new ZodiacSigns.ZodiacSignsClient(channel);
 
-            var sign = await client.GetZodiacSignAsync(new ZodiacSignRequest { Date = "spring" });
-            Console.WriteLine(sign.Sign);
+            string input = Console.ReadLine();
+
+            if (dateValidation.IsDateValid(input))
+            {
+                ZodiacSign sign = await client.GetZodiacSignAsync(new ZodiacSignRequest { Date = input });
+                Console.WriteLine(sign.Sign);
+            }
         }
     }
 }
