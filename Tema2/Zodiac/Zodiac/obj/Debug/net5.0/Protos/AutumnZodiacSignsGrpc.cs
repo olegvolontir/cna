@@ -69,6 +69,52 @@ namespace Zodiac.Protos.AutumnZodiacSign {
 
     }
 
+    /// <summary>Client for AutumnZodiacSign</summary>
+    public partial class AutumnZodiacSignClient : grpc::ClientBase<AutumnZodiacSignClient>
+    {
+      /// <summary>Creates a new client for AutumnZodiacSign</summary>
+      /// <param name="channel">The channel to use to make remote calls.</param>
+      public AutumnZodiacSignClient(grpc::ChannelBase channel) : base(channel)
+      {
+      }
+      /// <summary>Creates a new client for AutumnZodiacSign that uses a custom <c>CallInvoker</c>.</summary>
+      /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      public AutumnZodiacSignClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      {
+      }
+      /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      protected AutumnZodiacSignClient() : base()
+      {
+      }
+      /// <summary>Protected constructor to allow creation of configured clients.</summary>
+      /// <param name="configuration">The client configuration.</param>
+      protected AutumnZodiacSignClient(ClientBaseConfiguration configuration) : base(configuration)
+      {
+      }
+
+      public virtual global::Zodiac.Protos.AutumnZodiacSign.ZodiacSign GetZodiacSign(global::Zodiac.Protos.AutumnZodiacSign.InputDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetZodiacSign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Zodiac.Protos.AutumnZodiacSign.ZodiacSign GetZodiacSign(global::Zodiac.Protos.AutumnZodiacSign.InputDate request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetZodiacSign, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Zodiac.Protos.AutumnZodiacSign.ZodiacSign> GetZodiacSignAsync(global::Zodiac.Protos.AutumnZodiacSign.InputDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetZodiacSignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Zodiac.Protos.AutumnZodiacSign.ZodiacSign> GetZodiacSignAsync(global::Zodiac.Protos.AutumnZodiacSign.InputDate request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetZodiacSign, null, options, request);
+      }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      protected override AutumnZodiacSignClient NewInstance(ClientBaseConfiguration configuration)
+      {
+        return new AutumnZodiacSignClient(configuration);
+      }
+    }
+
     /// <summary>Creates service definition that can be registered with a server</summary>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static grpc::ServerServiceDefinition BindService(AutumnZodiacSignBase serviceImpl)

@@ -1,2 +1,0 @@
-obj\Debug\net5.0\Protos/SummerZodiacSigns.cs \
-obj\Debug\net5.0\Protos/SummerZodiacSignsGrpc.cs: Protos/summerZodiacSigns.proto

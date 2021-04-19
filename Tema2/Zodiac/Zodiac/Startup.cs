@@ -3,10 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Zodiac.Protos;
 using Zodiac.Services;
 
 namespace Zodiac
@@ -32,10 +29,7 @@ namespace Zodiac
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<WinterZodiacSignsService>();
-                endpoints.MapGrpcService<SpringZodiacSignsService>();
-                endpoints.MapGrpcService<SummerZodiacSignsService>();
-                endpoints.MapGrpcService<AutumnZodiacSignsService>();
+                endpoints.MapGrpcService<ZodiacSignsService>();
 
                 endpoints.MapGet("/", async context =>
                 {
