@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Zodiac.Protos.SpringZodiacSign {
+namespace Zodiac.Protos {
 
   /// <summary>Holder for reflection information generated from Protos/springZodiacSigns.proto</summary>
   public static partial class SpringZodiacSignsReflection {
@@ -24,35 +24,35 @@ namespace Zodiac.Protos.SpringZodiacSign {
     static SpringZodiacSignsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5Qcm90b3Mvc3ByaW5nWm9kaWFjU2lnbnMucHJvdG8iGQoJSW5wdXREYXRl",
-            "EgwKBGRhdGUYASABKAkiGgoKWm9kaWFjU2lnbhIMCgRzaWduGAEgASgJMjwK",
-            "EFNwcmluZ1pvZGlhY1NpZ24SKAoNR2V0Wm9kaWFjU2lnbhIKLklucHV0RGF0",
-            "ZRoLLlpvZGlhY1NpZ25CIaoCHlpvZGlhYy5Qcm90b3MuU3ByaW5nWm9kaWFj",
-            "U2lnbmIGcHJvdG8z"));
+            "Ch5Qcm90b3Mvc3ByaW5nWm9kaWFjU2lnbnMucHJvdG8iJwoXU3ByaW5nWm9k",
+            "aWFjU2lnblJlcXVlc3QSDAoEZGF0ZRgBIAEoCSIgChBTcHJpbmdab2RpYWNT",
+            "aWduEgwKBHNpZ24YASABKAkyVwoRU3ByaW5nWm9kaWFjU2lnbnMSQgoTR2V0",
+            "U3ByaW5nWm9kaWFjU2lnbhIYLlNwcmluZ1pvZGlhY1NpZ25SZXF1ZXN0GhEu",
+            "U3ByaW5nWm9kaWFjU2lnbkIQqgINWm9kaWFjLlByb3Rvc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zodiac.Protos.SpringZodiacSign.InputDate), global::Zodiac.Protos.SpringZodiacSign.InputDate.Parser, new[]{ "Date" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zodiac.Protos.SpringZodiacSign.ZodiacSign), global::Zodiac.Protos.SpringZodiacSign.ZodiacSign.Parser, new[]{ "Sign" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zodiac.Protos.SpringZodiacSignRequest), global::Zodiac.Protos.SpringZodiacSignRequest.Parser, new[]{ "Date" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zodiac.Protos.SpringZodiacSign), global::Zodiac.Protos.SpringZodiacSign.Parser, new[]{ "Sign" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class InputDate : pb::IMessage<InputDate>
+  public sealed partial class SpringZodiacSignRequest : pb::IMessage<SpringZodiacSignRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<InputDate> _parser = new pb::MessageParser<InputDate>(() => new InputDate());
+    private static readonly pb::MessageParser<SpringZodiacSignRequest> _parser = new pb::MessageParser<SpringZodiacSignRequest>(() => new SpringZodiacSignRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<InputDate> Parser { get { return _parser; } }
+    public static pb::MessageParser<SpringZodiacSignRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zodiac.Protos.SpringZodiacSign.SpringZodiacSignsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Zodiac.Protos.SpringZodiacSignsReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -61,21 +61,21 @@ namespace Zodiac.Protos.SpringZodiacSign {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public InputDate() {
+    public SpringZodiacSignRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public InputDate(InputDate other) : this() {
+    public SpringZodiacSignRequest(SpringZodiacSignRequest other) : this() {
       date_ = other.date_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public InputDate Clone() {
-      return new InputDate(this);
+    public SpringZodiacSignRequest Clone() {
+      return new SpringZodiacSignRequest(this);
     }
 
     /// <summary>Field number for the "date" field.</summary>
@@ -91,11 +91,11 @@ namespace Zodiac.Protos.SpringZodiacSign {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as InputDate);
+      return Equals(other as SpringZodiacSignRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(InputDate other) {
+    public bool Equals(SpringZodiacSignRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -162,7 +162,7 @@ namespace Zodiac.Protos.SpringZodiacSign {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(InputDate other) {
+    public void MergeFrom(SpringZodiacSignRequest other) {
       if (other == null) {
         return;
       }
@@ -212,19 +212,19 @@ namespace Zodiac.Protos.SpringZodiacSign {
 
   }
 
-  public sealed partial class ZodiacSign : pb::IMessage<ZodiacSign>
+  public sealed partial class SpringZodiacSign : pb::IMessage<SpringZodiacSign>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ZodiacSign> _parser = new pb::MessageParser<ZodiacSign>(() => new ZodiacSign());
+    private static readonly pb::MessageParser<SpringZodiacSign> _parser = new pb::MessageParser<SpringZodiacSign>(() => new SpringZodiacSign());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<ZodiacSign> Parser { get { return _parser; } }
+    public static pb::MessageParser<SpringZodiacSign> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zodiac.Protos.SpringZodiacSign.SpringZodiacSignsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Zodiac.Protos.SpringZodiacSignsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -233,21 +233,21 @@ namespace Zodiac.Protos.SpringZodiacSign {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ZodiacSign() {
+    public SpringZodiacSign() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ZodiacSign(ZodiacSign other) : this() {
+    public SpringZodiacSign(SpringZodiacSign other) : this() {
       sign_ = other.sign_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ZodiacSign Clone() {
-      return new ZodiacSign(this);
+    public SpringZodiacSign Clone() {
+      return new SpringZodiacSign(this);
     }
 
     /// <summary>Field number for the "sign" field.</summary>
@@ -263,11 +263,11 @@ namespace Zodiac.Protos.SpringZodiacSign {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as ZodiacSign);
+      return Equals(other as SpringZodiacSign);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(ZodiacSign other) {
+    public bool Equals(SpringZodiacSign other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -334,7 +334,7 @@ namespace Zodiac.Protos.SpringZodiacSign {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(ZodiacSign other) {
+    public void MergeFrom(SpringZodiacSign other) {
       if (other == null) {
         return;
       }

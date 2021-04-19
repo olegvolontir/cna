@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Zodiac.Protos.SummerZodiacSign {
+namespace Zodiac.Protos {
 
   /// <summary>Holder for reflection information generated from Protos/summerZodiacSigns.proto</summary>
   public static partial class SummerZodiacSignsReflection {
@@ -24,35 +24,35 @@ namespace Zodiac.Protos.SummerZodiacSign {
     static SummerZodiacSignsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5Qcm90b3Mvc3VtbWVyWm9kaWFjU2lnbnMucHJvdG8iGQoJSW5wdXREYXRl",
-            "EgwKBGRhdGUYASABKAkiGgoKWm9kaWFjU2lnbhIMCgRzaWduGAEgASgJMjwK",
-            "EFN1bW1lclpvZGlhY1NpZ24SKAoNR2V0Wm9kaWFjU2lnbhIKLklucHV0RGF0",
-            "ZRoLLlpvZGlhY1NpZ25CIaoCHlpvZGlhYy5Qcm90b3MuU3VtbWVyWm9kaWFj",
-            "U2lnbmIGcHJvdG8z"));
+            "Ch5Qcm90b3Mvc3VtbWVyWm9kaWFjU2lnbnMucHJvdG8iJwoXU3VtbWVyWm9k",
+            "aWFjU2lnblJlcXVlc3QSDAoEZGF0ZRgBIAEoCSIgChBTdW1tZXJab2RpYWNT",
+            "aWduEgwKBHNpZ24YASABKAkyVwoRU3VtbWVyWm9kaWFjU2lnbnMSQgoTR2V0",
+            "U3VtbWVyWm9kaWFjU2lnbhIYLlN1bW1lclpvZGlhY1NpZ25SZXF1ZXN0GhEu",
+            "U3VtbWVyWm9kaWFjU2lnbkIQqgINWm9kaWFjLlByb3Rvc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zodiac.Protos.SummerZodiacSign.InputDate), global::Zodiac.Protos.SummerZodiacSign.InputDate.Parser, new[]{ "Date" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zodiac.Protos.SummerZodiacSign.ZodiacSign), global::Zodiac.Protos.SummerZodiacSign.ZodiacSign.Parser, new[]{ "Sign" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zodiac.Protos.SummerZodiacSignRequest), global::Zodiac.Protos.SummerZodiacSignRequest.Parser, new[]{ "Date" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zodiac.Protos.SummerZodiacSign), global::Zodiac.Protos.SummerZodiacSign.Parser, new[]{ "Sign" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class InputDate : pb::IMessage<InputDate>
+  public sealed partial class SummerZodiacSignRequest : pb::IMessage<SummerZodiacSignRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<InputDate> _parser = new pb::MessageParser<InputDate>(() => new InputDate());
+    private static readonly pb::MessageParser<SummerZodiacSignRequest> _parser = new pb::MessageParser<SummerZodiacSignRequest>(() => new SummerZodiacSignRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<InputDate> Parser { get { return _parser; } }
+    public static pb::MessageParser<SummerZodiacSignRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zodiac.Protos.SummerZodiacSign.SummerZodiacSignsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Zodiac.Protos.SummerZodiacSignsReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -61,21 +61,21 @@ namespace Zodiac.Protos.SummerZodiacSign {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public InputDate() {
+    public SummerZodiacSignRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public InputDate(InputDate other) : this() {
+    public SummerZodiacSignRequest(SummerZodiacSignRequest other) : this() {
       date_ = other.date_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public InputDate Clone() {
-      return new InputDate(this);
+    public SummerZodiacSignRequest Clone() {
+      return new SummerZodiacSignRequest(this);
     }
 
     /// <summary>Field number for the "date" field.</summary>
@@ -91,11 +91,11 @@ namespace Zodiac.Protos.SummerZodiacSign {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as InputDate);
+      return Equals(other as SummerZodiacSignRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(InputDate other) {
+    public bool Equals(SummerZodiacSignRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -162,7 +162,7 @@ namespace Zodiac.Protos.SummerZodiacSign {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(InputDate other) {
+    public void MergeFrom(SummerZodiacSignRequest other) {
       if (other == null) {
         return;
       }
@@ -212,19 +212,19 @@ namespace Zodiac.Protos.SummerZodiacSign {
 
   }
 
-  public sealed partial class ZodiacSign : pb::IMessage<ZodiacSign>
+  public sealed partial class SummerZodiacSign : pb::IMessage<SummerZodiacSign>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ZodiacSign> _parser = new pb::MessageParser<ZodiacSign>(() => new ZodiacSign());
+    private static readonly pb::MessageParser<SummerZodiacSign> _parser = new pb::MessageParser<SummerZodiacSign>(() => new SummerZodiacSign());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<ZodiacSign> Parser { get { return _parser; } }
+    public static pb::MessageParser<SummerZodiacSign> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zodiac.Protos.SummerZodiacSign.SummerZodiacSignsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Zodiac.Protos.SummerZodiacSignsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -233,21 +233,21 @@ namespace Zodiac.Protos.SummerZodiacSign {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ZodiacSign() {
+    public SummerZodiacSign() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ZodiacSign(ZodiacSign other) : this() {
+    public SummerZodiacSign(SummerZodiacSign other) : this() {
       sign_ = other.sign_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ZodiacSign Clone() {
-      return new ZodiacSign(this);
+    public SummerZodiacSign Clone() {
+      return new SummerZodiacSign(this);
     }
 
     /// <summary>Field number for the "sign" field.</summary>
@@ -263,11 +263,11 @@ namespace Zodiac.Protos.SummerZodiacSign {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as ZodiacSign);
+      return Equals(other as SummerZodiacSign);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(ZodiacSign other) {
+    public bool Equals(SummerZodiacSign other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -334,7 +334,7 @@ namespace Zodiac.Protos.SummerZodiacSign {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(ZodiacSign other) {
+    public void MergeFrom(SummerZodiacSign other) {
       if (other == null) {
         return;
       }

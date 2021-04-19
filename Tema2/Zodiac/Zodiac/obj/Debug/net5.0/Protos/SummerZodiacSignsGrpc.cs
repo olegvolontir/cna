@@ -7,10 +7,10 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Zodiac.Protos.SummerZodiacSign {
-  public static partial class SummerZodiacSign
+namespace Zodiac.Protos {
+  public static partial class SummerZodiacSigns
   {
-    static readonly string __ServiceName = "SummerZodiacSign";
+    static readonly string __ServiceName = "SummerZodiacSigns";
 
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
@@ -42,94 +42,94 @@ namespace Zodiac.Protos.SummerZodiacSign {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
-    static readonly grpc::Marshaller<global::Zodiac.Protos.SummerZodiacSign.InputDate> __Marshaller_InputDate = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zodiac.Protos.SummerZodiacSign.InputDate.Parser));
-    static readonly grpc::Marshaller<global::Zodiac.Protos.SummerZodiacSign.ZodiacSign> __Marshaller_ZodiacSign = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zodiac.Protos.SummerZodiacSign.ZodiacSign.Parser));
+    static readonly grpc::Marshaller<global::Zodiac.Protos.SummerZodiacSignRequest> __Marshaller_SummerZodiacSignRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zodiac.Protos.SummerZodiacSignRequest.Parser));
+    static readonly grpc::Marshaller<global::Zodiac.Protos.SummerZodiacSign> __Marshaller_SummerZodiacSign = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zodiac.Protos.SummerZodiacSign.Parser));
 
-    static readonly grpc::Method<global::Zodiac.Protos.SummerZodiacSign.InputDate, global::Zodiac.Protos.SummerZodiacSign.ZodiacSign> __Method_GetZodiacSign = new grpc::Method<global::Zodiac.Protos.SummerZodiacSign.InputDate, global::Zodiac.Protos.SummerZodiacSign.ZodiacSign>(
+    static readonly grpc::Method<global::Zodiac.Protos.SummerZodiacSignRequest, global::Zodiac.Protos.SummerZodiacSign> __Method_GetSummerZodiacSign = new grpc::Method<global::Zodiac.Protos.SummerZodiacSignRequest, global::Zodiac.Protos.SummerZodiacSign>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetZodiacSign",
-        __Marshaller_InputDate,
-        __Marshaller_ZodiacSign);
+        "GetSummerZodiacSign",
+        __Marshaller_SummerZodiacSignRequest,
+        __Marshaller_SummerZodiacSign);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Zodiac.Protos.SummerZodiacSign.SummerZodiacSignsReflection.Descriptor.Services[0]; }
+      get { return global::Zodiac.Protos.SummerZodiacSignsReflection.Descriptor.Services[0]; }
     }
 
-    /// <summary>Base class for server-side implementations of SummerZodiacSign</summary>
-    [grpc::BindServiceMethod(typeof(SummerZodiacSign), "BindService")]
-    public abstract partial class SummerZodiacSignBase
+    /// <summary>Base class for server-side implementations of SummerZodiacSigns</summary>
+    [grpc::BindServiceMethod(typeof(SummerZodiacSigns), "BindService")]
+    public abstract partial class SummerZodiacSignsBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::Zodiac.Protos.SummerZodiacSign.ZodiacSign> GetZodiacSign(global::Zodiac.Protos.SummerZodiacSign.InputDate request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Zodiac.Protos.SummerZodiacSign> GetSummerZodiacSign(global::Zodiac.Protos.SummerZodiacSignRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
-    /// <summary>Client for SummerZodiacSign</summary>
-    public partial class SummerZodiacSignClient : grpc::ClientBase<SummerZodiacSignClient>
+    /// <summary>Client for SummerZodiacSigns</summary>
+    public partial class SummerZodiacSignsClient : grpc::ClientBase<SummerZodiacSignsClient>
     {
-      /// <summary>Creates a new client for SummerZodiacSign</summary>
+      /// <summary>Creates a new client for SummerZodiacSigns</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public SummerZodiacSignClient(grpc::ChannelBase channel) : base(channel)
+      public SummerZodiacSignsClient(grpc::ChannelBase channel) : base(channel)
       {
       }
-      /// <summary>Creates a new client for SummerZodiacSign that uses a custom <c>CallInvoker</c>.</summary>
+      /// <summary>Creates a new client for SummerZodiacSigns that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public SummerZodiacSignClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      public SummerZodiacSignsClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
-      protected SummerZodiacSignClient() : base()
+      protected SummerZodiacSignsClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
-      protected SummerZodiacSignClient(ClientBaseConfiguration configuration) : base(configuration)
+      protected SummerZodiacSignsClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
-      public virtual global::Zodiac.Protos.SummerZodiacSign.ZodiacSign GetZodiacSign(global::Zodiac.Protos.SummerZodiacSign.InputDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Zodiac.Protos.SummerZodiacSign GetSummerZodiacSign(global::Zodiac.Protos.SummerZodiacSignRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetZodiacSign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetSummerZodiacSign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Zodiac.Protos.SummerZodiacSign.ZodiacSign GetZodiacSign(global::Zodiac.Protos.SummerZodiacSign.InputDate request, grpc::CallOptions options)
+      public virtual global::Zodiac.Protos.SummerZodiacSign GetSummerZodiacSign(global::Zodiac.Protos.SummerZodiacSignRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetZodiacSign, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetSummerZodiacSign, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::Zodiac.Protos.SummerZodiacSign.ZodiacSign> GetZodiacSignAsync(global::Zodiac.Protos.SummerZodiacSign.InputDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Zodiac.Protos.SummerZodiacSign> GetSummerZodiacSignAsync(global::Zodiac.Protos.SummerZodiacSignRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetZodiacSignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetSummerZodiacSignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::Zodiac.Protos.SummerZodiacSign.ZodiacSign> GetZodiacSignAsync(global::Zodiac.Protos.SummerZodiacSign.InputDate request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Zodiac.Protos.SummerZodiacSign> GetSummerZodiacSignAsync(global::Zodiac.Protos.SummerZodiacSignRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetZodiacSign, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetSummerZodiacSign, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
-      protected override SummerZodiacSignClient NewInstance(ClientBaseConfiguration configuration)
+      protected override SummerZodiacSignsClient NewInstance(ClientBaseConfiguration configuration)
       {
-        return new SummerZodiacSignClient(configuration);
+        return new SummerZodiacSignsClient(configuration);
       }
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    public static grpc::ServerServiceDefinition BindService(SummerZodiacSignBase serviceImpl)
+    public static grpc::ServerServiceDefinition BindService(SummerZodiacSignsBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetZodiacSign, serviceImpl.GetZodiacSign).Build();
+          .AddMethod(__Method_GetSummerZodiacSign, serviceImpl.GetSummerZodiacSign).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
     /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
     /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    public static void BindService(grpc::ServiceBinderBase serviceBinder, SummerZodiacSignBase serviceImpl)
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, SummerZodiacSignsBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetZodiacSign, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zodiac.Protos.SummerZodiacSign.InputDate, global::Zodiac.Protos.SummerZodiacSign.ZodiacSign>(serviceImpl.GetZodiacSign));
+      serviceBinder.AddMethod(__Method_GetSummerZodiacSign, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zodiac.Protos.SummerZodiacSignRequest, global::Zodiac.Protos.SummerZodiacSign>(serviceImpl.GetSummerZodiacSign));
     }
 
   }

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Zodiac.Protos";
+
+service AutumnZodiacSigns
+{
+	rpc GetAutumnZodiacSign(AutumnZodiacSignRequest) returns (AutumnZodiacSign);
+}
+
+message AutumnZodiacSignRequest
+{
+	string date = 1;
+}
+
+message AutumnZodiacSign
+{
+	string sign = 1;
+}

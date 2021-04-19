@@ -11,7 +11,7 @@ namespace ZodiacClient
             var channel = GrpcChannel.ForAddress("https://localhost:5001");
             var client = new ZodiacSigns.ZodiacSignsClient(channel);
 
-            var sign = await client.GetZodiacSignAsync(new ZodiacSignRequest { Date = "date" });
+            var sign = await client.GetZodiacSignAsync(new ZodiacSignRequest { Date = "spring" });
             Console.WriteLine(sign.Sign);
         }
     }

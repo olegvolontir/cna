@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos/WinterZodiacSigns.cs \
+obj\Debug\net5.0\Protos/WinterZodiacSignsGrpc.cs: Protos/winterZodiacSigns.proto

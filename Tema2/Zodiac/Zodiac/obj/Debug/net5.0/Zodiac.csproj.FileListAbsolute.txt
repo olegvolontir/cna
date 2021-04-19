@@ -28,4 +28,3 @@ C:\Users\oovolontir\source\repos\cna\Tema2\Zodiac\Zodiac\obj\Debug\net5.0\Zodiac
 C:\Users\oovolontir\source\repos\cna\Tema2\Zodiac\Zodiac\obj\Debug\net5.0\ref\Zodiac.dll
 C:\Users\oovolontir\source\repos\cna\Tema2\Zodiac\Zodiac\obj\Debug\net5.0\Zodiac.pdb
 C:\Users\oovolontir\source\repos\cna\Tema2\Zodiac\Zodiac\obj\Debug\net5.0\Zodiac.genruntimeconfig.cache
-C:\Users\oovolontir\source\repos\cna\Tema2\Zodiac\Zodiac\obj\Debug\net5.0\Zodiac.csprojAssemblyReference.cache

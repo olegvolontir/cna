@@ -7,10 +7,10 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Zodiac.Protos.SpringZodiacSign {
-  public static partial class SpringZodiacSign
+namespace Zodiac.Protos {
+  public static partial class SpringZodiacSigns
   {
-    static readonly string __ServiceName = "SpringZodiacSign";
+    static readonly string __ServiceName = "SpringZodiacSigns";
 
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
@@ -42,94 +42,94 @@ namespace Zodiac.Protos.SpringZodiacSign {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
-    static readonly grpc::Marshaller<global::Zodiac.Protos.SpringZodiacSign.InputDate> __Marshaller_InputDate = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zodiac.Protos.SpringZodiacSign.InputDate.Parser));
-    static readonly grpc::Marshaller<global::Zodiac.Protos.SpringZodiacSign.ZodiacSign> __Marshaller_ZodiacSign = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zodiac.Protos.SpringZodiacSign.ZodiacSign.Parser));
+    static readonly grpc::Marshaller<global::Zodiac.Protos.SpringZodiacSignRequest> __Marshaller_SpringZodiacSignRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zodiac.Protos.SpringZodiacSignRequest.Parser));
+    static readonly grpc::Marshaller<global::Zodiac.Protos.SpringZodiacSign> __Marshaller_SpringZodiacSign = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zodiac.Protos.SpringZodiacSign.Parser));
 
-    static readonly grpc::Method<global::Zodiac.Protos.SpringZodiacSign.InputDate, global::Zodiac.Protos.SpringZodiacSign.ZodiacSign> __Method_GetZodiacSign = new grpc::Method<global::Zodiac.Protos.SpringZodiacSign.InputDate, global::Zodiac.Protos.SpringZodiacSign.ZodiacSign>(
+    static readonly grpc::Method<global::Zodiac.Protos.SpringZodiacSignRequest, global::Zodiac.Protos.SpringZodiacSign> __Method_GetSpringZodiacSign = new grpc::Method<global::Zodiac.Protos.SpringZodiacSignRequest, global::Zodiac.Protos.SpringZodiacSign>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetZodiacSign",
-        __Marshaller_InputDate,
-        __Marshaller_ZodiacSign);
+        "GetSpringZodiacSign",
+        __Marshaller_SpringZodiacSignRequest,
+        __Marshaller_SpringZodiacSign);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Zodiac.Protos.SpringZodiacSign.SpringZodiacSignsReflection.Descriptor.Services[0]; }
+      get { return global::Zodiac.Protos.SpringZodiacSignsReflection.Descriptor.Services[0]; }
     }
 
-    /// <summary>Base class for server-side implementations of SpringZodiacSign</summary>
-    [grpc::BindServiceMethod(typeof(SpringZodiacSign), "BindService")]
-    public abstract partial class SpringZodiacSignBase
+    /// <summary>Base class for server-side implementations of SpringZodiacSigns</summary>
+    [grpc::BindServiceMethod(typeof(SpringZodiacSigns), "BindService")]
+    public abstract partial class SpringZodiacSignsBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::Zodiac.Protos.SpringZodiacSign.ZodiacSign> GetZodiacSign(global::Zodiac.Protos.SpringZodiacSign.InputDate request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Zodiac.Protos.SpringZodiacSign> GetSpringZodiacSign(global::Zodiac.Protos.SpringZodiacSignRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
-    /// <summary>Client for SpringZodiacSign</summary>
-    public partial class SpringZodiacSignClient : grpc::ClientBase<SpringZodiacSignClient>
+    /// <summary>Client for SpringZodiacSigns</summary>
+    public partial class SpringZodiacSignsClient : grpc::ClientBase<SpringZodiacSignsClient>
     {
-      /// <summary>Creates a new client for SpringZodiacSign</summary>
+      /// <summary>Creates a new client for SpringZodiacSigns</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public SpringZodiacSignClient(grpc::ChannelBase channel) : base(channel)
+      public SpringZodiacSignsClient(grpc::ChannelBase channel) : base(channel)
       {
       }
-      /// <summary>Creates a new client for SpringZodiacSign that uses a custom <c>CallInvoker</c>.</summary>
+      /// <summary>Creates a new client for SpringZodiacSigns that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public SpringZodiacSignClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      public SpringZodiacSignsClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
-      protected SpringZodiacSignClient() : base()
+      protected SpringZodiacSignsClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
-      protected SpringZodiacSignClient(ClientBaseConfiguration configuration) : base(configuration)
+      protected SpringZodiacSignsClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
-      public virtual global::Zodiac.Protos.SpringZodiacSign.ZodiacSign GetZodiacSign(global::Zodiac.Protos.SpringZodiacSign.InputDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Zodiac.Protos.SpringZodiacSign GetSpringZodiacSign(global::Zodiac.Protos.SpringZodiacSignRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetZodiacSign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetSpringZodiacSign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Zodiac.Protos.SpringZodiacSign.ZodiacSign GetZodiacSign(global::Zodiac.Protos.SpringZodiacSign.InputDate request, grpc::CallOptions options)
+      public virtual global::Zodiac.Protos.SpringZodiacSign GetSpringZodiacSign(global::Zodiac.Protos.SpringZodiacSignRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetZodiacSign, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetSpringZodiacSign, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::Zodiac.Protos.SpringZodiacSign.ZodiacSign> GetZodiacSignAsync(global::Zodiac.Protos.SpringZodiacSign.InputDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Zodiac.Protos.SpringZodiacSign> GetSpringZodiacSignAsync(global::Zodiac.Protos.SpringZodiacSignRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetZodiacSignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetSpringZodiacSignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::Zodiac.Protos.SpringZodiacSign.ZodiacSign> GetZodiacSignAsync(global::Zodiac.Protos.SpringZodiacSign.InputDate request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Zodiac.Protos.SpringZodiacSign> GetSpringZodiacSignAsync(global::Zodiac.Protos.SpringZodiacSignRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetZodiacSign, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetSpringZodiacSign, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
-      protected override SpringZodiacSignClient NewInstance(ClientBaseConfiguration configuration)
+      protected override SpringZodiacSignsClient NewInstance(ClientBaseConfiguration configuration)
       {
-        return new SpringZodiacSignClient(configuration);
+        return new SpringZodiacSignsClient(configuration);
       }
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    public static grpc::ServerServiceDefinition BindService(SpringZodiacSignBase serviceImpl)
+    public static grpc::ServerServiceDefinition BindService(SpringZodiacSignsBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetZodiacSign, serviceImpl.GetZodiacSign).Build();
+          .AddMethod(__Method_GetSpringZodiacSign, serviceImpl.GetSpringZodiacSign).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
     /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
     /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    public static void BindService(grpc::ServiceBinderBase serviceBinder, SpringZodiacSignBase serviceImpl)
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, SpringZodiacSignsBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetZodiacSign, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zodiac.Protos.SpringZodiacSign.InputDate, global::Zodiac.Protos.SpringZodiacSign.ZodiacSign>(serviceImpl.GetZodiacSign));
+      serviceBinder.AddMethod(__Method_GetSpringZodiacSign, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zodiac.Protos.SpringZodiacSignRequest, global::Zodiac.Protos.SpringZodiacSign>(serviceImpl.GetSpringZodiacSign));
     }
 
   }
