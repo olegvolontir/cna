@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Grpc.Core;
@@ -12,8 +10,8 @@ namespace Zodiac.Services
 {
     public class WinterZodiacSignsService : WinterZodiacSigns.WinterZodiacSignsBase
     {
-        private readonly string[] intervals;
         private readonly ILogger<WinterZodiacSignsService> _logger;
+        private readonly string[] intervals;
         private string monthPatternReq;
         private string dayPatternReq;
         private string monthPatternText;
