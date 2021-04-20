@@ -14,12 +14,13 @@ namespace ZodiacClient
             var channel = GrpcChannel.ForAddress("https://localhost:5001");
             var client = new ZodiacSigns.ZodiacSignsClient(channel);
 
+            Console.WriteLine("Write a date (mm/dd/yyyy or (m/d/yyyy):");
             string input = Console.ReadLine();
 
             if (dateValidation.IsDateValid(input))
             {
                 ZodiacSign sign = await client.GetZodiacSignAsync(new ZodiacSignRequest { Date = input });
-                Console.WriteLine(sign.Sign);
+                Console.WriteLine("The zodiac sign corespoding to the date: " + sign.Sign);
             }
         }
     }
