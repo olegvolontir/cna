@@ -1,6 +1,7 @@
 ﻿using System;
 using Grpc.Net.Client;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace ZodiacClient
 {
